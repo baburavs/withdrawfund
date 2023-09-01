@@ -1,0 +1,73 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  table th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  table td, table th {
+    padding: 12px;
+    border: 1px solid #ccc;
+  }
+  
+  table tbody tr:hover {
+    background-color: #e0e0e0;
+  }
+  
+  table th {
+    text-align: center;
+  }
+  
+  /* table td {
+    text-align: center;
+  } */
+  table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+  }
+
+  /* Make the last column fixed-width */
+  table td:last-child {
+    width: 100px; /* Adjust the width as needed */
+    white-space: nowrap; /* Prevent text from wrapping */
+  }
+  .btn-primary {
+    width: 61%;
+    height: 25px;
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    cursor: pointer;
+  }
+  .btn-success:hover {
+    color: #fff;
+    background-color: #449d44;
+    border-color: #398439;
+}
+.btn.focus, .btn:focus, .btn:hover {
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn-success {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    padding: 5px 18px;
+    font-size: 13px;
+}
+#inp-withdraw{
+  padding: 3px;
+    font-size: 16px;
+    width: 93%;
+}

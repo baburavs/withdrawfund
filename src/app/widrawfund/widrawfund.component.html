@@ -1,0 +1,65 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+
+            <h2>Solution</h2>
+            <hr>
+
+            <h3>Current Available Denomination in Machine</h3>
+        
+            <table class="table table-striped">
+                <tbody>
+                    <tr>
+                        <th>2000</th>
+                        <td data-ad="2000">{{twothousand}}</td>
+                        <td>|</td>
+                        <td style="width:200px;"><input  [(ngModel)]="twothousand" data-ad="2000" value="0"></td>
+                    </tr>
+                    <tr>
+                        <th>500</th>
+                        <td data-ad="500">{{fivehundred}}</td>
+                        <td>|</td>
+                        <td><input [(ngModel)]="fivehundred" data-ad="500" value="0"></td>
+        
+                    </tr>
+                    <tr>
+                        <th>200</th>
+                        <td data-ad="200">{{twohundred}}</td>
+                        <td>|</td>
+                        <td><input [(ngModel)]="twohundred" data-ad="200" value="0"></td>
+        
+                    </tr>
+                    <tr>
+                        <th>100</th>
+                        <td data-ad="100">{{onehundred}}</td>
+                        <td>|</td>
+                        <td><input data-ad="100" [(ngModel)]="onehundred" value="0"></td>
+        
+                    </tr>
+                    <tr>
+                        <th>Total</th>
+                        <td id="td-total">{{Total}}</td>
+                        <td>|</td>
+                        <td><button class="btn btn-primary" id="btn-deposit"  (click)="Deposit()">Deposit</button></td>
+                    </tr>
+        
+                </tbody>
+            </table>
+            <hr>
+            
+            <div class="input-group">
+            <input id="inp-withdraw" type="text"  [(ngModel)]="withdrawAmount" class="form-control" placeholder="Enter amount for withdrawal" value="">
+            <span class="input-group-btn">
+              <button id="btn-withdraw" class="btn btn-success" (click)="Withdraw()" type="button">Withdraw!</button>
+            </span>
+          </div>
+          <hr>
+          <h3>Log</h3>
+            <div class="log">
+                <h3>Deposit Log</h3>
+          <div class="log" [innerHTML]="logDisplay"></div>    
+          </div>
+        </div>
+    </div>
+  
+</div>
